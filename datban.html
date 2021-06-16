@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#datban{
+  text-decoration: none;
+  background-color: #FFCC00;
+  color: #000000;
+  padding: 7px 180px;
+  border-radius: 10px;
+
+}
+
+div{
+
+Display: flex;
+padding: 10px 15px;
+}
+.child{
+	padding-left: 12px;
+	margin-right: 10px;	
+}
+</style>
+<body>
+	<h2>Đặt bàn</h2>
+
+	<div>
+		
+	<form action="action_page.php">
+<input type="number" name="quantity" min="1" max="20" class="child">
+<input type="date" name="bday" min="2021-05-20" class="child">
+<input type="time" name="usr_time" class="child"><br><br>
+</form>
+	</div>
+	
+<button id="datban"  onclick="msg()" >Đặt bàn</button> 
+</form>
+<script type="text/javascript">  
+      function msg(){  
+       alert("Đặt bàn thành công!");  
+      }  
+    </script> 
+</body>
+</html>

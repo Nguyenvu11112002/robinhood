@@ -1,0 +1,563 @@
+   :root
+{
+  --color1: #FBBC01;
+
+}
+body{
+  background: #111111;
+  padding: 0;
+  margin: 0;
+border: 0;
+}
+iframe {
+  margin: 50px;
+}
+}
+ *{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+}
+.slide{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 100px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  right: 240px;
+  margin-left: 200px;
+}
+.chuyen-slide{
+  width: 9999px;
+  transition: all 0.5s;
+}
+.chuyen-slide img{
+  width: 770px;
+  height: 400px;
+}
+img{
+  width: 700px;
+  height: 400px;
+  float:left;
+  text-align: center;
+  left: 600px;
+}
+.dieuhuong{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 48%;
+  padding-left: 20px;
+}
+.dieuhuong i:last-child{
+  position: relative;
+  left: 650px;
+}
+header{
+  width: 100vw;
+  height: 100vh;
+  background:  url()
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+header::before{
+  
+}
+header input{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  position: fixed;
+}
+header input:checked ~.menu-line ::before.menu-item
+{
+  transform: rotate((90deg));
+  top: 0;
+}
+header input:checked ~.menu-line ::after.menu-item
+{
+  transform: rotate((90deg));
+  top: 0;
+}
+header input:checked ~.menu-line.menu-item
+{
+  transform: rotate((135deg));
+  transition: 0.3s;
+}
+header input:checked ~ .menu-item
+{
+  right: 0; 
+}
+.menu-icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-line{
+  height: 4px;
+  width: 100%;
+  background:var(--color1);
+  position: relative;
+}
+.menu-line::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: var(--color1);
+  top: -14px
+}
+.menu-line::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: var(--color1);
+  top: 14px
+}
+.menu-item{
+  padding-top: 12px;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+  right:-100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+.menu-item li{
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.menu-item li a{
+  color: var(--color1)
+}
+.tieude{
+ position: relative;
+  bottom:  235px;
+  font-size: 17px;
+  margin-top:10 px;
+  left: 450px;    
+}
+.content img{
+  width: 380px;
+  height: 300px;
+  margin: 20px auto;
+  display: grid;
+  text-align: center;
+  grid-gap: 100px;
+}
+.iteam img{
+  width: 150px;
+  height: 150px;
+}
+.item1 ,.item2,.item3,.item4,.item5,.item6{
+  position: relative;
+}
+h2{
+  position: absolute;
+  color: white;
+  top: 160px;
+}
+h3{
+  position: absolute;
+  color:white;
+  top:620px;
+  font-size: 23px;
+}
+b{
+  margin-top:700px;  
+}
+.gioithieu img{
+  margin-top: 40px;
+}
+.social-menu ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin:0;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.social-menu ul li{
+  list-style: none;
+  margin: 10px 10px;
+}
+.social-menu ul li .fa{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color: #000;
+}
+.social-menu ul li {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+  top: 2880px;
+}
+.social-menu a{
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+   position: relative;
+  display: block;
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    border-radius: 50%;
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #FF3399;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+/*custom font - Montserrat*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+
+
+/*Thumbnail Background*/
+.thumb {
+  width: 600px; height: 300px; margin: 70px auto;
+  perspective: 1000px;
+}
+.thumb a {
+  display: block; width: 100%; height: 100%;
+  /*double layered BG for lighting effect*/
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("11.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover, cover;
+  /*draw the BG bottom up*/
+  background-position: bottom;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+  color: white; text-transform: uppercase;
+  position: absolute; top: 100%; left: 0; width: 100%;
+  font: bold 12px/36px Montserrat; text-align: center;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; 
+  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+.thumb:hover a:before {
+  opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  /*pushing the shadow down and scaling it down to size*/
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+/*Thumbnail Background*/
+.thuml {
+  width: 600px; height: 300px; margin: 70px auto;
+  perspective: 1000px;
+}
+.thuml a {
+  display: block; width: 100%; height: 100%;
+  /*double layered BG for lighting effect*/
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("21.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.thuml:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thuml a:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover, cover;
+  /*draw the BG bottom up*/
+  background-position: bottom;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thuml a span {
+  color: white; text-transform: uppercase;
+  position: absolute; top: 100%; left: 0; width: 100%;
+  font: bold 12px/36px Montserrat; text-align: center;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+/*shadow*/
+.thuml a:before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; 
+  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+.thuml:hover a:before {
+  opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  /*pushing the shadow down and scaling it down to size*/
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+/*Thumbnail Background*/
+.thumc {
+  width: 600px; height: 300px; margin: 70px auto;
+  perspective: 1000px;
+}
+.thumc a {
+  display: block; width: 100%; height: 100%;
+  /*double layered BG for lighting effect*/
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("31.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.thumc:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumc a:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover, cover;
+  /*draw the BG bottom up*/
+  background-position: bottom;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumc a span {
+  color: white; text-transform: uppercase;
+  position: absolute; top: 100%; left: 0; width: 100%;
+  font: bold 12px/36px Montserrat; text-align: center;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+/*shadow*/
+.thumc a:before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; 
+  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+.thumc:hover a:before {
+  opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  /*pushing the shadow down and scaling it down to size*/
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+/*Thumbnail Background*/
+.thumd {
+  width: 600px; height: 300px; margin: 70px auto;
+  perspective: 1000px;
+}
+.thumd a {
+  display: block; width: 100%; height: 100%;
+  /*double layered BG for lighting effect*/
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("41.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.thumd:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumd a:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover, cover;
+  /*draw the BG bottom up*/
+  background-position: bottom;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumd a span {
+  color: white; text-transform: uppercase;
+  position: absolute; top: 100%; left: 0; width: 100%;
+  font: bold 12px/36px Montserrat; text-align: center;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+/*shadow*/
+.thumd a:before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; 
+  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+.thumd:hover a:before {
+  opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  /*pushing the shadow down and scaling it down to size*/
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+/*Thumbnail Background*/
+.thume {
+  width: 600px; height: 300px; margin: 70px auto;
+  perspective: 1000px;
+}
+.thume a {
+  display: block; width: 100%; height: 100%;
+  /*double layered BG for lighting effect*/
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("41.jpg");
+  /*disabling the translucent black bg on the main image*/
+  background-size: 0, cover;
+  /*3d space for children*/
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.thume:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thume a:after {
+  /*36px high element positioned at the bottom of the image*/
+  content: ''; position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 36px;
+  /*inherit the main BG*/
+  background: inherit; background-size: cover, cover;
+  /*draw the BG bottom up*/
+  background-position: bottom;
+  /*rotate the surface 90deg on the bottom axis*/
+  transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thume a span {
+  color: white; text-transform: uppercase;
+  position: absolute; top: 100%; left: 0; width: 100%;
+  font: bold 12px/36px Montserrat; text-align: center;
+  /*the rotation is a bit less than the bottom surface to avoid flickering*/
+  transform: rotateX(-89.99deg); transform-origin: top;
+  z-index: 1;
+}
+/*shadow*/
+.thume a:before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s; 
+  /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+.thume:hover a:before {
+  opacity: 1;
+  /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  /*pushing the shadow down and scaling it down to size*/
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
